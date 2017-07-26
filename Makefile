@@ -1,4 +1,4 @@
-KOKKOS_PATH = ${OLCF_TRILINOS_ROOT}
+KOKKOS_PATH = ${HOME}/kokkos
 KOKKOS_DEVICES = "Cuda"
 EXE_NAME = "mandelbrot"
 
@@ -26,7 +26,7 @@ DEPFLAGS = -M
 OBJ = $(SRC:.cpp=.o)
 LIB =
 
-include $(KOKKOS_PATH)/Makefile.export.kokkos
+include $(KOKKOS_PATH)/Makefile.kokkos
 
 build: $(EXE)
 
